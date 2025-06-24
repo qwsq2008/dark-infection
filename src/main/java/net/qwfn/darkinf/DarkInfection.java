@@ -16,7 +16,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(DarkInfection.MOD_ID)
 public class DarkInfection
 {
-     public static final String MOD_ID = "darkinfection";
+     public static final String MOD_ID = "dark_infection";
 
 
     public DarkInfection()    {
