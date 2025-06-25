@@ -29,6 +29,7 @@ public class DICreativeTabs {
                         pOutput.accept(DIBlocks.the_anomaly.get());
                         pOutput.accept(DIBlocks.void_gem_ore.get());
                         pOutput.accept(DIBlocks.void_steel_ore.get());
+                        pOutput.accept(DIBlocks.cobbled_void.get());
 
                     }).build());
 

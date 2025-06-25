@@ -43,6 +43,9 @@ public class DIBlocks {
     public static final RegistryObject<Block> void_gem_ore = registerBlock("void_gem_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final RegistryObject<Block> cobbled_void = registerBlock("cobbled_void",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
