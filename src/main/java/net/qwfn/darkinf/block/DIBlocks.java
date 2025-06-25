@@ -6,16 +6,15 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.qwfn.darkinf.DarkInfection;
-import net.qwfn.darkinf.item.ModItems;
+import net.qwfn.darkinf.item.DItems;
 
 import java.util.function.Supplier;
 
-public class Modblocks {
+public class DIBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, DarkInfection.MOD_ID);
 
@@ -26,6 +25,18 @@ public class Modblocks {
     public static final RegistryObject<Block> raw_void_steel_block = registerBlock("raw_void_steel_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final RegistryObject<Block> void_soil = registerBlock("void_soil",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1f).sound(SoundType.GRASS)));
+    public static final RegistryObject<Block> void_dirt = registerBlock("void_dirt",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1f).sound(SoundType.ROOTED_DIRT)));
+    public static final RegistryObject<Block> void_stone = registerBlock("void_stone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final RegistryObject<Block> the_anomaly = registerBlock("the_anomaly",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(32767f).requiresCorrectToolForDrops().sound(SoundType.SCULK)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
@@ -35,7 +46,7 @@ public class Modblocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        DItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {
