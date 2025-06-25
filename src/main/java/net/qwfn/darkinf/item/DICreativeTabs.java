@@ -18,7 +18,7 @@ public class DICreativeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(DIBlocks.the_anomaly.get()))
                     .title(Component.translatable("creativetab.dark_infection.infected_blocks_n_items"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(DItems.void_steel.get());
+                        pOutput.accept(DItems.void_steel_ingot.get());
                         pOutput.accept(DItems.raw_void_steel.get());
                         pOutput.accept(DItems.void_gem.get());
                         pOutput.accept(DIBlocks.void_steel_block.get());

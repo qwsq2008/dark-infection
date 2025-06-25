@@ -10,7 +10,7 @@ import net.qwfn.darkinf.DarkInfection;
 public class DItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, DarkInfection.MOD_ID);
 
-    public static  final RegistryObject<Item> void_steel = ITEMS.register("void_steel",
+    public static  final RegistryObject<Item> void_steel_ingot = ITEMS.register("void_steel_ingot",
             () -> new Item(new Item.Properties()));
     public static  final RegistryObject<Item> raw_void_steel = ITEMS.register("raw_void_steel",
             () -> new Item(new Item.Properties()));
