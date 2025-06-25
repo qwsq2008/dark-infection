@@ -37,6 +37,12 @@ public class DIBlocks {
     public static final RegistryObject<Block> the_anomaly = registerBlock("the_anomaly",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(32767f).requiresCorrectToolForDrops().sound(SoundType.SCULK)));
+    public static final RegistryObject<Block> void_steel_ore = registerBlock("void_steel_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final RegistryObject<Block> void_gem_ore = registerBlock("void_gem_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
