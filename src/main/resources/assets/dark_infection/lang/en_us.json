@@ -3,5 +3,7 @@
   "item.dark_infection.raw_void_steel": "Raw Void Steel",
 
   "block.dark_infection.void_steel_block": "Void Steel Block",
-  "block.dark_infection.raw_void_steel_block": "Raw Void Steel Block"
+  "block.dark_infection.raw_void_steel_block": "Raw Void Steel Block",
+
+  "creativetab.dark_infection.infected_blocks_n_items": "Infected Blocks N Items"
 }

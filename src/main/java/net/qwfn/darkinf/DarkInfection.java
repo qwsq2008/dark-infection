@@ -13,6 +13,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.qwfn.darkinf.block.Modblocks;
+import net.qwfn.darkinf.item.ModCreativeModeTabs;
 import net.qwfn.darkinf.item.ModItems;
 
 @Mod(DarkInfection.MOD_ID)
@@ -25,6 +26,9 @@ public class DarkInfection
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register((modEventBus));
+
         ModItems.register(modEventBus);
         Modblocks.register(modEventBus);
 
